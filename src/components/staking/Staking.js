@@ -29,7 +29,7 @@ const Staking = () => {
   }, []);
 
   return (
-    <div className=" bg-gray-800 text-white flex flex-col justify-between items-center px-6 py-2">
+    <div className=" bg-gray-800 text-white flex flex-col justify-between items-center px-4 py-2">
       <main className="p-4 space-y-6 w-full">
         <section className="bg-gray-800 py-2 border border-gray-700 rounded-2xl space-y-4 px-4">
           <div className="bg-gray-800 rounded-lg  flex items-center justify-between shadow-lg w-full">

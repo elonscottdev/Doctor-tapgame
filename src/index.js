@@ -3,20 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { initMiniApp, mockTelegramEnv, parseInitData } from '@telegram-apps/sdk';
 
-
-const initializeTelegramSDK = async () => {
-  try {
-    const [miniApp] = initMiniApp();
-    await miniApp.ready();
-  } catch (error) {
-    // Handle error and initialize mock environment for development
-    mockTelegramEnv({ /* ... */ }); 
-  }
-};
-
-initializeTelegramSDK();
+import WebApp from '@twa-dev/sdk'
+WebApp.ready();
+// Initialize SDK
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

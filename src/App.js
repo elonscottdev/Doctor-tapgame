@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/layouts/Header";
 import FooterNav from "./components/layouts/FooterNav";
@@ -8,7 +7,7 @@ import Minting from "./components/minting/Minting";
 import Reward from "./components/reward/Reward";
 import Profile from "./components/profile/Profile";
 
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
