@@ -1,18 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { RainbowKitWrapper } from "./rainbotwitProvider";
+import WebApp from "@twa-dev/sdk";
+// import "@rainbow-me/rainbowkit/styles.css";
 
-import WebApp from '@twa-dev/sdk'
 WebApp.ready();
 // Initialize SDK
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <RainbowKitWrapper>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </RainbowKitWrapper>
 );
 
 // If you want to start measuring performance in your app, pass a function
