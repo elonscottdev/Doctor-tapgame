@@ -21,7 +21,7 @@ module.exports = {
       },
       fontFamily: {
 
-        'pixelify': ['"Pixelify Sans", sans-serif'] // Add your custom font name here
+        'roboto': ['Roboto', 'sans-serif'], // Add your custom font name here
 
     }
     },
